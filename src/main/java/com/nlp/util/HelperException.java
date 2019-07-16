@@ -12,6 +12,10 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class HelperException extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String endUserMessage;
 
 	

@@ -16,7 +16,7 @@ public class ClassificationCoreLabel {
 		this.pos = pos;
 		this.ner = ner;
 	}
-
+	
 	
 	@Override
 	public String toString() {

@@ -4,22 +4,16 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.UnsupportedCharsetException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.opencsv.CSVWriter;
 
 public class FileHelper extends BaseHelper {
-	
-	private static final Logger log = LoggerFactory.getLogger(FileHelper.class);
 	
 	public void saveToFile(String content, String baseDir, String fileName, String encoding) {
 
