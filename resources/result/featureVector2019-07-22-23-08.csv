@@ -1,0 +1,110 @@
+SUBJECT|SCALAR_TYPE|TAG|VERB|TAG|OBJECT|SCALAR_TYPE|TAG|LABEL 
+Tom||NNP|helped|VBD|Mary escape||NN|Association
+She||PRP|kept|VBD|working||VBG|Association
+He||PRP|has|VBZ|goatee||NN|Association
+It||PRP|is in|IN|peak condition||NN|Attribute_value
+We||PRP|found|RB|them||PRP|Association
+I||PRP|really respect|NN|Tom||NNP|Association
+We||POS|do|VB|this||DT|Association
+I||PRP|can fake|JJ|it||PRP|Association
+She||PRP|has|VBZ|many faults||NNS|Attribute
+it||PRP|has|null|my job||NN|Aggregation
+Humans||NNS|are|VBP|stupid animals||NNS|Inheritance
+chairs||NNS|are|VBP|taken||VBN|Association
+It||PRP|comes|VBZ|eating||VBG|Association
+That||DT|has|null|last year's snow||NN|Aggregation
+I||PRP|am afraid of|IN|bats||NNS|Association
+She||PRP|covered|VBD|her tattoos||NNS|Association
+I||PRP|'ll certainly miss|VB|her||PRP|Association
+socks||NNS|smell|VBP|bad||JJ|Attribute_value
+I||PRP|ended|VBD|your sleep||NN|Association
+everything||NN|Suddenly went|VBD|black||JJ|Attribute_value
+We||PRP|started before|IN|sunrise||NN|Attribute_value
+This||DT|is|VBZ|powerful stuff||NN|Inheritance
+He||PRP|looks|VBZ|very worried||JJ|Attribute
+He||PRP|guaranteed|VBD|my debt||NN|Association
+That||DT|is enough for|IN|today||NN|Attribute
+you||PRP|Do recognize|VB|this||DT|Association
+I||PRP|had|VBD|two dogs||NNS|Association
+I||PRP|doubt|VBP|generalizations||NNS|Association
+you||PRP|Did salt|NN|this||DT|Association
+She||PRP|is combing|VBG|her hair||NN|Association
+I||PRP|intended|VBD|succeed||VB|Association
+We||PRP|need|VBP|challenge||NN|Association
+Christianity||NNP|has|VBZ|many followers||NNS|Aggregation
+I||PRP|love|VBP|you||PRP|Association
+This||DT|is|VBZ|cooking well||RB|Attribute_value
+Tom||NNP|is|VBZ|very secretive||JJ|Attribute_value
+Tom||NNP|loves|VBZ|drive||VB|Association
+His picture||NN|got|VBD|accepted||VBN|Association
+She||PRP|has|null|shallow||JJ|Attribute_value
+She||PRP|really likes|VBZ|English||NNP|Association
+They||PRP|formed|VBD|circle||NN|Association
+children||NNS|dislike|VBP|school||NN|Association
+I||PRP|could kill|VB|you||PRP|Association
+I||PRP|know|VBP|Tom personally||RB|Association
+She||PRP|identified |RB|him||PRP|Association
+Animals||NNS|act on|IN|instinct||NN|Association
+His teeth||NNS|had|VBD|gaps||NNS|Aggregation
+You||PRP|are|VBP|very unfair||JJ|Attribute_value
+Tom||NNP|made|VBD|leather goods||NNS|Association
+I||PRP|am teaching|VBG|English||NNP|Association
+He||PRP|invited |RB|me||PRP|Association
+I||PRP|must buy|VB|one||CD|Multiplicity
+Your plan||NN|sounds|VBZ|great||JJ|Attribute
+His life||NN|seems|VBZ|hexed||VBN|Attribute
+It||PRP|is starting to|TO|rain||NN|Association
+Tom||NNP|slit|VBD|his wrists||NNS|Association
+Tom||NNP|needs|VBZ|new shoes||NNS|Association
+I||PRP|'m|VBP|busy guy||NN|Association
+I||PRP|'m|VBP|suddenly very thirsty||JJ|Association
+you||PRP|Do have|VBP|money||NN|Aggregation
+She||PRP|is|VBZ|badly off||RB|Association
+You||PRP|do seem|VB|different||JJ|Association
+That||DT|would|MD|dumb||JJ|Attribute
+People||NNS|liked|VBD|Jimmy Carter||NNP|Association
+We||PRP|'re worried about|IN|him||PRP|Association
+She||PRP|showers in|null|morning||NN|Attribute
+We||PRP|could ask|VB|her||PRP|Association
+Tom||NNP|scarcely recognized|VBD|Mary||NNP|Association
+You||PRP|have|VBP|books||NNS|Association
+Tom||NNP|hugged|RB|Mary||NNP|Association
+Traffic||NN|was|VBD|heavy||JJ|Association
+I||PRP|'m|VBP|fine||JJ|Association
+It||PRP|has|null|complicated subject||NN|Association
+women||NNS|are|VBP|strong||JJ|Attribute_value
+That||DT|is all|DT|I said||VBD|Association
+It||PRP|was|VBD|years ago||RB|Attribute
+I||PRP|live in|IN|comfort||NN|Association
+Kids||NNS|really want|VBP|balloons||NNS|Association
+I||PRP|like|VBP|colors||NNS|Association
+Lincoln||NNP|died in|IN|1865||CD|Attribute_value
+She||PRP|comes from|IN|California||NNP|Association
+I||PRP|am|VBP|surprised||JJ|Attribute_value
+You||PRP|are|VBP|funny one||CD|Attribute_value
+We||PRP|are learning|VBG|Arabic||NNP|Association
+They||PRP|are|VBP|my friends||NNS|Association
+Monroe||NNP|received|VBD|65 votes||NNS|Association
+Tom||NNP|spilled|VBD|milk||NN|Association
+Earth||NNP|is|VBZ|planet||NN|Inheritance
+He||PRP|is|VBZ|very fast||RB|Attribute_value
+You||PRP|have underestimated|VBD|Tom||NNP|Association
+Tom||NNP|broke|VBD|law||NN|Association
+His information||NN|is|VBZ|certain||JJ|Attribute
+Mother||NN|has|VBZ|old-fashioned ideas||NNS|Association
+weather||NN|is|VBZ|terrible||JJ|Attribute_value
+His behaviour||NN|was|VBD|bad||JJ|Attribute_value
+I||PRP|stayed at|IN|home||NN|Association
+You||PRP|bring|VBP|bagels||NNS|Association
+We||PRP|help|VB|them||PRP|Association
+Tom||NNP|lives|VBZ|next door||NN|Association
+She||PRP|is doing|VBG|her best||JJS|Attribute_value
+Dreams||NNS|tell|VBP|truth||NN|Attribute_value
+Tom||NNP|has|null|money-grubbing opportunist||NN|Association
+This||DT|is|VBZ|rather frightening||JJ|Attribute_value
+I||PRP|felt like|IN|God||NNP
+Land||NNP|came in|IN|sight||NN
+You||PRP|'re afraid of|IN|him||PRP
+'s||PRP|meet on|IN|Sunday||NNP
+Skiing||NN|is|VBZ|my passion||NN
+Aisling||VBG|seems|VBZ|very happy||JJ

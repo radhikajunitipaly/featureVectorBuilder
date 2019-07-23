@@ -32,7 +32,7 @@ public class Feature_merged {
 	static String line = null;
 	static FileHelper fileHelper = new FileHelper();
 	static Date date = new Date();
-	static String content = "SUBJECT|SCALAR_TYPE|TAG|ATTR-WN|VERB|TAG|ATTR-WN|OBJECT|SCALAR_TYPE|TAG|ATTR-WN \n";;
+	static String content = "SUBJECT|SCALAR_TYPE|TAG|VERB|TAG|OBJECT|SCALAR_TYPE|TAG|LABEL \n";;
 
 	public static final String PROPERTIESLIST = "tokenize,ssplit,pos,lemma,depparse,natlog,openie,ner";
 
@@ -70,6 +70,7 @@ public class Feature_merged {
 					fileContent = new BufferedReader(new FileReader(new File(filename)));
 
 					String tempLine;
+					int sentenceNo = 0;
 					while ((tempLine = fileContent.readLine()) != null) {
 
 						line = tempLine;
@@ -83,7 +84,7 @@ public class Feature_merged {
 						pipeline.annotate(annotation);
 
 						// Loop over sentences in the document
-						int sentenceNo = 0;
+						
 						for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
 							System.out.println(
 									"\n############################## PROCESSING NEXT SENTENCE #########################\n");
@@ -107,7 +108,9 @@ public class Feature_merged {
 
 							// Find the largest of all the triples
 							RelationTriple triple = getLongestTriple(triples);
-
+							if(triple==null) {
+								continue;
+							}
 							// Print the triples
 							System.out.println(triple.confidence + "\t" + triple.subjectLemmaGloss() + "\t"
 									+ triple.relationGloss() + "\t" + triple.objectLemmaGloss());
@@ -130,14 +133,13 @@ public class Feature_merged {
 									relationPos = ccl.getPos();
 								}
 							}
-
-							content = content + triple.subjectGloss() + "|" + "" + "|" + subjectPos + "|" + "" + "|"
-									+ triple.relationGloss() + "|" + relationPos + "|" + "" + "|" + triple.objectGloss()
-									+ "|" + "" + "|" + objectPos +"|"+ "" + "|" + "\n";
-
-							writeToFeatureVector(content, "featureVector");
+						
+							content = content + triple.subjectGloss() + "|" + "" + "|" + subjectPos + "|"
+								+ triple.relationGloss() + "|" + relationPos + "|" + triple.objectGloss()
+								+ "|" + "" + "|" + objectPos + "\n";
 						}
 					}
+					writeToFeatureVector(content, "featureVector");
 
 				} catch (Exception e) {
 					System.out.println("Program encountered an error while processing the file : " + e);
@@ -149,6 +151,8 @@ public class Feature_merged {
 		}
 
 	}
+	
+	
 
 	private static RelationTriple getLongestTriple(Collection<RelationTriple> triples) {
 		int count = 0;
