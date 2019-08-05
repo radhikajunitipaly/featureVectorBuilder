@@ -17,6 +17,7 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 import com.nlp.util.FileHelper;
+import com.nlp.wordnet.WordNetService;
 import com.nlp.util.ClassificationCoreLabel;
 
 import edu.stanford.nlp.ie.util.RelationTriple;
@@ -32,7 +33,9 @@ public class Feature_merged {
 	static String line = null;
 	static FileHelper fileHelper = new FileHelper();
 	static Date date = new Date();
-	static String content = "SUBJECT|SCALAR_TYPE|TAG|VERB|TAG|OBJECT|SCALAR_TYPE|TAG|LABEL \n";;
+	static String content = "SUBJECT|SUB_NER|SCALAR_TYPE|TAG|VERB||VCAT|TAG|OBJECT|OBJ_NER|SCALAR_TYPE|TAG|LABEL \n";
+	static String contentForAutoWeka = "S-NER, S-SCALAR, S-TAG, V-CAT, V-TAG, O-NER, O-SCALAR, O-TAG, LABEL\n";
+	static Map<String, String> vcat = new HashMap<String, String>();
 
 	public static final String PROPERTIESLIST = "tokenize,ssplit,pos,lemma,depparse,natlog,openie,ner";
 
@@ -121,25 +124,36 @@ public class Feature_merged {
 							String subjectPos = null;
 							String objectPos = null;
 							String relationPos = null;
+							
+							String subjectNer = null;
+							String objectNer = null;
 
 							for (ClassificationCoreLabel ccl : listOfClassificationPerWord) {
 								if (ccl.getWord().equals(oieSubjectArray[oieSubjectArray.length - 1])) {
 									subjectPos = ccl.getPos();
+									subjectNer = ccl.getNer();
 								}
 								if (ccl.getWord().equals(oieObjectArray[oieObjectArray.length - 1])) {
 									objectPos = ccl.getPos();
+									objectNer = ccl.getNer();
 								}
 								if (ccl.getWord().equals(oieRelationArray[oieRelationArray.length - 1])) {
 									relationPos = ccl.getPos();
 								}
 							}
 						
-							content = content + triple.subjectGloss() + "|" + "" + "|" + subjectPos + "|"
-								+ triple.relationGloss() + "|" + relationPos + "|" + triple.objectGloss()
-								+ "|" + "" + "|" + objectPos + "\n";
+							content = content + triple.subjectGloss() + "|" + subjectNer + "|"+
+									"" + "|" + 
+									subjectPos + "|" + triple.relationGloss() + "|"+ getvcat(triple.relationGloss()) + "|" + relationPos + "|" + triple.objectGloss()
+								+ "|" +  objectNer + "|"+ "" + "|" + objectPos + "\n";
+							
+							contentForAutoWeka = contentForAutoWeka + "'"+subjectNer + "','"+ "0" + "','" + 
+									subjectPos + "','" + getvcat(triple.relationGloss()) + "','" + relationPos
+								+ "','" +  objectNer + "','"+ "0" + "','" + objectPos + "',\n";
 						}
 					}
 					writeToFeatureVector(content, "featureVector");
+					writeToFeatureVectorForAutoWeka(contentForAutoWeka, "featureVectorForAutoWeka");
 
 				} catch (Exception e) {
 					System.out.println("Program encountered an error while processing the file : " + e);
@@ -185,13 +199,58 @@ public class Feature_merged {
 
 		fileHelper.saveToFile(content, "result", outputFilename, "UTF-8");
 	}
+	
+	private static void writeToFeatureVectorForAutoWeka(String content, String filename) {
+		DateTime dt = new DateTime(date);
+		DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");
+		String outputFilename = "\\" + filename + "" + dt.toString(dtf) + ".csv";
+
+		fileHelper.saveToFile(content, "result", outputFilename, "UTF-8");
+	}
 
 	private static String getFileWithRelativePath(final File folder, final File file) {
 		return folder + "\\" + file.getName();
 	}
 
 	public static void main(String[] args) throws IOException {
-
+		addVerbCategories();
 		listFilesForFolder(new Feature_merged("test").folder);
+	}
+
+	private static void addVerbCategories() {
+		vcat.put("has", "possession");
+		vcat.put("have", "possession");
+		vcat.put("had", "possession");
+		vcat.put("possess", "possession");
+		vcat.put("consist of", "comprised of");
+		vcat.put("comprised of", "comprised of");
+		vcat.put("constituent of", "comprised of");
+		vcat.put("compose", "consist");
+		vcat.put("form", "consist");
+		vcat.put("composed", "consist");
+		vcat.put("formed", "consist");
+		vcat.put("consist", "consist");
+		vcat.put("encompass", "consist");
+		vcat.put("embrace", "consist");
+		vcat.put("constituted", "consist");
+		vcat.put("comprised", "consist");
+		vcat.put("constitute", "consist");
+		vcat.put("comprise", "consist");
+		vcat.put("make-up", "consist");
+		vcat.put("made-up-4", "consist");
+		vcat.put("has", "containment");
+		vcat.put("has", "containment");
+		vcat.put("is", "IS-A");
+		vcat.put("was", "IS-A");
+		vcat.put("are", "IS-A");
+		vcat.put("were", "IS-A");
+		vcat.put("am", "IS-A");
+		vcat.put("regarded as", "IS-A");
+		vcat.put("be", "IS-A");
+		vcat.put("been", "IS-A");
+	}
+	
+	private static String getvcat(String verb) {
+		return (vcat.get(verb)==null)? "Other" : vcat.get(verb);
 	}
 }
