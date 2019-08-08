@@ -1,0 +1,201 @@
+SUBJECT|SUB_NER|SCALAR_TYPE|TAG|VERB|VCAT|TAG|OBJECT|OBJ_NER|SCALAR_TYPE|TAG|LABEL 
+news announcers|O|1|NNS|opened|Other|VBD|door|O|0|NN
+Betsy 's nephew|O|0|NN|kicked|Other|VBD|ball|O|0|NN
+They|O|0|PRP|eat|Other|VBP|fish|O|1|NN
+house|O|1|NN|has|containment|VBZ|basement|O|0|NN
+I|O|0|PRP|fried|Other|VBD|egg|O|0|NN
+cat|O|0|NN|is|IS-A|VBZ|animal|O|0|NN
+elitium|O|0|NN|was|IS-A|VBD|membership plan|O|0|NN
+I|O|0|PRP|steal|Other|VBP|things|O|1|NNS
+science teacher|TITLE|1|NN|wears|Other|VBZ|glasses|O|1|NNS
+I|O|0|PRP|played|Other|VBD|organ|O|0|NN
+department|O|0|NN|has|containment|VBZ|teachers|O|0|NNS
+They|O|0|PRP|take|Other|VBP|photograph|O|0|NN
+cashiers|O|0|NNS|climb|Other|VBP|mountain|O|0|NN
+flight attendants|O|0|NNS|tie|Other|VBP|knot|O|0|NN
+comedian|TITLE|0|NN|had|possession|VBD|props|O|0|NNS
+car mechanic|TITLE|0|NN|washed|Other|VBN|clothes|O|0|NNS
+They|O|0|PRP|kick|Other|VBP|ball|O|0|NN
+car|O|0|NN|has|containment|VBZ|alarm|O|0|NN
+truck|O|0|NN|is|IS-A|VBZ|nice car|O|0|NN
+fishermen|O|0|NNS|tie|Other|VBP|knot|O|0|NN
+They|O|0|PRP|feed|Other|VBP|cat|O|0|NN
+I|O|0|PRP|rowed|Other|VBD|boat|O|0|NN
+Miss Johnson|PERSON|0|NNP|painted|Other|VBD|door|O|0|NN
+Penny|PERSON|0|NN|is|IS-A|VBZ|good friend|O|1|NN
+safe|O|0|JJ|has|containment|VBZ|code|O|0|NN
+GUI|O|0|NNP|is|IS-A|VBZ|interface|O|0|NN
+I|O|0|PRP|am|IS-A|VBP|person|O|0|NN
+They|O|0|PRP|feed|Other|VBP|cat|O|0|NN
+farmers|O|0|NNS|picked|Other|VBD|peach|O|0|NN
+Becky|PERSON|0|NNP|is|IS-A|VBZ|doctor|TITLE|0|NN
+Thomas|PERSON|0|NNP|is|IS-A|VBZ|cat|O|0|NN
+Lonnie|PERSON|0|NNP|used|Other|VBD|computer|O|0|NN
+fan|O|0|NN|has|containment|VBZ|several speed settings|O|0|NNS
+They|O|0|PRP|painted|Other|VBD|door|O|0|NN
+Sue|O|0|NNP|ate|Other|VBD|crackers|O|0|NNS
+movie|O|0|NN|had|possession|VBD|nice plot|O|0|NN
+I|O|0|PRP|had ahead|Other|RB|career|O|0|NN
+They|O|0|PRP|rode|Other|VBD|unicycle|O|0|NN
+computer|O|0|NN|has|containment|VBZ|cpu|O|0|NN
+guard|TITLE|0|NN|is|IS-A|VBZ|professional|O|0|JJ
+librarians|O|0|NNS|replaced|Other|VBD|fuse|O|0|NN
+I|O|0|PRP|drive|Other|VBP|sports car|O|0|NN
+Dad|O|0|NNP|was|IS-A|VBD|veteran|O|0|NN
+student|TITLE|0|NN|has|containment|VBZ|laptop|O|0|NN
+Kate 's granddaughter|O|0|NN|ate|Other|VBD|crackers|O|0|NNS
+flight attendants|O|0|NNS|carry|Other|VBP|briefcase|O|0|NN
+Charly|PERSON|0|NNP|was|IS-A|VBD|picky eater|O|0|NN
+janitor|TITLE|0|NN|stole|Other|VBD|money|O|0|NN
+musician|TITLE|0|NN|washes|Other|VBZ|clothes|O|0|NNS
+Elephants|O|0|NNS|have|possession|VBP|long ears|O|0|NNS
+type|O|1|NN|is in|Other|IN|Texas|STATE_OR_PROVINCE|0|NNP
+fade|O|0|VB|were|IS-A|VBD|secret organization|O|0|NN
+scientist|TITLE|0|NN|carries|Other|VBZ|suitcase|O|0|NN
+revolver|O|0|NN|is|IS-A|VBZ|gun|O|0|NN
+hand|O|1|NN|has|containment|VBZ|five fingers|O|0|NNS
+They|O|0|PRP|buy|Other|VBP|juice|O|1|NN
+Ditto|O|0|NNP|is|IS-A|VBZ|normal pokemon|O|0|NN
+Bill|PERSON|1|NNP|had|possession|VBD|trade system|O|0|NN
+farmers|O|0|NNS|feed|Other|VBP|cat|O|0|NN
+Bill 's wife|O|1|NN|played|Other|VBD|organ|O|0|NN
+carpenter|TITLE|0|NN|had|possession|VBD|drill|O|0|NN
+engineering|O|0|NN|college of is|Other|VBZ|department at UTA|ORGANIZATION|0|NNP
+hero|O|0|NN|had|possession|VBD|red cape|O|0|NN
+They|O|0|PRP|opened|Other|VBD|door|O|0|NN
+Billy|PERSON|0|NNP|is|IS-A|VBZ|average kid|O|0|NN
+They|O|0|PRP|lift|Other|VBP|weights|O|1|NNS
+Animals|O|0|NNS|are living|Other|VBG|beings|O|0|NNS
+Sarah|PERSON|0|NNP|has|containment|VBZ|book about sheeps|O|0|NNS
+manager|TITLE|0|NN|kicked|Other|VBD|ball|O|0|NN
+dentist|TITLE|0|NN|has|containment|VBZ|clinic|O|0|NN
+police|O|1|NN|had|possession|VBD|criminal|O|0|JJ
+plumber|TITLE|0|NN|was|IS-A|VBD|my friend|O|0|NN
+show|O|0|NN|had|possession|VBD|red carpet|O|0|NN
+wand|O|0|NN|is|IS-A|VBZ|magic object|O|0|NN
+tacher|O|0|NN|has|containment|VBZ|id|O|0|NN
+Mayans|MISC|0|NNPS|had|possession|VBD|sacred temples|O|0|NNS
+Lonnie|PERSON|0|NNP|wore|Other|VBD|hat|O|0|NN
+They|O|0|PRP|ate|Other|VBD|crackers|O|0|NNS
+thief|O|0|NN|had|possession|VBD|hoodie|O|0|NN
+I|O|0|PRP|feed|Other|VBP|cat|O|0|NN
+science teachers|O|1|NNS|wore|Other|VBD|hat|O|0|NN
+Jeff|PERSON|0|NNP|is|IS-A|VBZ|software engineer|TITLE|0|NN
+car mechanic|TITLE|0|NN|takes|Other|VBZ|picture|O|0|NN
+gardeners|O|0|NNS|peel|Other|VBP|apple|O|0|NN
+taxi drivers|O|0|NNS|read|Other|VBP|story|O|0|NN
+orc|O|0|NN|is|IS-A|VBZ|serial killer|CRIMINAL_CHARGE|0|NN
+Java|MISC|0|NNP|has|containment|VBZ|primitive types|O|0|NNS
+Theater|O|0|NNP|has|containment|VBZ|has elective for while|O|0|NN
+Ann Lynn|PERSON|0|NNP|catches|Other|VBZ|frogs|O|0|NNS
+room|O|1|NN|has|containment|VBZ|tv|O|0|NN
+cellphone|O|0|NN|has|containment|VBZ|tracker|O|0|NN
+Miss Johnson|PERSON|0|NNP|washes|Other|VBZ|car|O|0|NN
+Janitors|O|0|NNS|are|IS-A|VBP|school employees|O|1|NNS
+singer|TITLE|0|NN|peeled|Other|VBD|banana|O|0|NN
+They|O|0|PRP|kick|Other|VBP|ball|O|0|NN
+Scientists|O|0|NNS|have|possession|VBP|lab coats|O|0|NNS
+I|O|0|PRP|took|Other|VBD|test|O|0|NN
+Nigel|PERSON|0|NNP|is|IS-A|VBZ|french puddle|O|0|NN
+Corgi|PERSON|0|NN|are|IS-A|VBP|energetic dogs|O|0|NNS
+Jane|PERSON|0|NNP|had|possession|VBD|long hair|O|0|NN
+laptop|O|0|NN|is|IS-A|VBZ|personal computer|O|0|NN
+carpenter|TITLE|0|NN|catches|Other|VBZ|frogs|O|0|NNS
+I|O|0|PRP|have|possession|VBP|long neck|O|0|NN
+menu|O|0|NN|has|containment|VBZ|exit button|O|0|NN
+samsung galaxy|O|0|NN|is|IS-A|VBZ|new phone|O|0|NN
+Dogs|O|0|NNS|are|IS-A|VBP|good companions|O|1|NNS
+manager|TITLE|0|NN|catches|Other|VBZ|frogs|O|0|NNS
+Verizon|ORGANIZATION|0|NNP|has|containment|VBZ|cellphones|O|0|NNS
+I|O|0|PRP|wore|Other|VBD|hat|O|0|NN
+Jenny|PERSON|1|NNP|drives|Other|VBZ|car|O|0|NN
+teacher|TITLE|0|NN|takes|Other|VBZ|bath|O|0|NN
+Walmart|ORGANIZATION|0|NNP|has|containment|VBZ|huge parking lot|O|0|NN
+Amazon|ORGANIZATION|0|NNP|is|IS-A|VBZ|huge company|O|0|NN
+I|O|0|PRP|take|Other|VBP|shower|O|0|NN
+Frogs|O|0|NNS|are|IS-A|VBP|amphibians|O|0|NNS
+Joe|PERSON|0|NNP|has|containment|null|girlfriend ties|O|0|NNS
+Incas|O|0|NNPS|were tribe in|Other|IN|Peru|COUNTRY|0|NNP
+singers|O|0|NNS|stole|Other|VBD|money|O|0|NN
+People|O|0|NNS|are|IS-A|VBP|idiots|O|0|NNS
+movie|O|0|NN|is regarded as|Other|IN|drama|O|0|NN
+Cats|O|0|NNS|have|possession|VBP|wiskers|O|0|NNS
+science teacher|TITLE|1|NN|has|containment|VBZ|crazy hairstyle|O|0|NN
+store clerks|O|0|NNS|rowed|Other|VBD|boat|O|0|NN
+show|O|0|NN|had|possession|VBD|wide audience|O|0|NN
+Marge|PERSON|0|NNP|fixed|Other|VBN|radio|O|0|NN
+They|O|0|PRP|bought|Other|VBD|video tapes|O|0|NNS
+Ashley|PERSON|0|NNP|buys|Other|VBZ|book|O|0|NN
+duchess|TITLE|0|NN|is regarded as|Other|IN|god|O|0|NN
+Dogs|O|0|NNS|have|possession|VBP|long tails|O|0|NNS
+They|O|0|PRP|ate|Other|VBD|crackers|O|0|NNS
+I|O|0|PRP|ate|Other|VBD|crackers|O|0|NNS
+My monitor|O|0|NN|has|containment|VBZ|stand|O|1|NN
+barbers|O|0|NNS|ironed|Other|VBD|shirt|O|0|NN
+I|O|0|PRP|kicked|Other|VBD|ball|O|0|NN
+Joe|PERSON|0|NNP|kicked|Other|VBD|ball|O|0|NN
+store clerks|O|0|NNS|mailed|Other|VBD|package|O|0|NN
+musician|TITLE|0|NN|opens|Other|VBZ|can|O|0|NN
+My game console|O|0|NN|has|containment|VBZ|touch screen|O|0|NN
+car mechanics|O|0|NNS|lift|Other|VBP|weights|O|1|NNS
+Horses|O|0|NNS|have|possession|VBP|four legs|O|0|NNS
+dogs|O|0|NNS|are regarded as|Other|IN|foxes|O|0|NNS
+spy|O|0|NN|replaced|Other|VBD|fuse|O|0|NN
+gardener|TITLE|0|NN|ironed|Other|VBD|shirt|O|0|NN
+Fortnite|O|0|NNP|is|IS-A|VBZ|battle royale game|O|0|NN
+Cats|O|0|NNS|are|IS-A|VBP|feline creatures|O|0|NNS
+turtle|O|0|NN|has|containment|VBZ|name|O|1|NN
+car mechanics|O|0|NNS|take|Other|VBP|photograph|O|0|NN
+cashiers|O|0|NNS|ironed|Other|VBD|shirt|O|0|NN
+raptors|O|0|NNS|have|possession|VBP|trophy|O|0|NN
+Aztecs|O|0|NNPS|were|IS-A|VBD|civilization|O|0|NN
+guard|TITLE|0|NN|has|containment|VBZ|gun|O|0|NN
+dentists|O|0|NNS|served|Other|VBD|cookies|O|0|NNS
+science teachers|O|1|NNS|wear|Other|VBP|glasses|O|1|NNS
+Dollar bills|O|0|NNS|have hidden|Other|VBN|messages|O|0|NNS
+Robert|PERSON|0|NNP|takes|Other|VBZ|test|O|0|NN
+flight attendant|TITLE|0|JJ|climbs|Other|VBZ|ladder|O|0|NN
+Betty|PERSON|0|NNP|was scientist at|Other|IN|UTA|ORGANIZATION|0|NNP
+carpenter|TITLE|0|NN|carries|Other|VBZ|suitcase|O|0|NN
+They|O|0|PRP|had|possession|VBD|romance|O|1|NN
+managers|O|0|NNS|drank|Other|VBD|water|O|0|NN
+I|O|0|PRP|was|IS-A|VBD|winner|O|0|NN
+car|O|0|NN|has|containment|VBZ|steering wheel|O|0|NN
+romans|O|0|NNS|had|possession|VBD|empire|O|0|NN
+Bill 's wife|O|1|NN|painted|Other|VBD|door|O|0|NN
+manager|TITLE|0|NN|rides|Other|NNS|bicycle|O|0|NN
+spy|O|0|NN|is|IS-A|VBZ|traitor|O|0|NN
+Bill 's wife|O|1|NN|lifts|Other|VBZ|weights|O|1|NNS
+farmer|TITLE|0|NN|had|possession|VBD|nice truck|O|0|NN
+I|O|0|PRP|am citizen of|Other|IN|Spain|COUNTRY|0|NNP
+Amazon|ORGANIZATION|0|NNP|has|containment|VBZ|new delivery service|O|0|NN
+I|O|0|PRP|replaced|Other|VBD|fuse|O|0|NN
+news announcer|TITLE|1|NN|has|containment|VBZ|loud voice|O|0|NN
+Roger 's father|O|0|NN|fixed|Other|VBN|radio|O|0|NN
+They|O|0|PRP|wore|Other|VBD|hat|O|0|NN
+I|O|0|PRP|was|IS-A|VBD|pivotal character|O|0|NN
+Betty Sue|PERSON|0|NNP|is|IS-A|VBZ|Australian actress|TITLE|0|NN
+dentists|O|0|NNS|read|Other|VBP|magazine|O|1|NN
+gardeners|O|0|NNS|painted|Other|VBD|door|O|0|NN
+gardener|TITLE|0|NN|takes|Other|VBZ|test|O|0|NN
+I|O|0|PRP|was|IS-A|VBD|sole survivor|O|1|NN
+doctor|TITLE|0|NN|has|containment|VBZ|several degrees|O|0|NNS
+thief|O|0|NN|read|Other|VBD|story|O|0|NN
+Dropbox|O|0|NNP|has|containment|VBZ|website|O|0|NN
+Becky|PERSON|0|NNP|is|IS-A|VBZ|singer|TITLE|0|NN
+Ash|PERSON|0|NNP|has|containment|VBZ|pokemons|O|0|NNS
+gardener|TITLE|0|NN|spends|Other|VBZ|money|O|0|NN
+bus drivers|O|0|NNS|stole|Other|VBD|money|O|0|NN
+Dennis|PERSON|0|NNP|was|IS-A|VBD|winner|O|0|NN
+manager|TITLE|0|NN|fried|Other|VBD|egg|O|0|NN
+flight attendant|TITLE|0|NN|had|possession|VBD|uniform|O|0|NN
+store clerks|O|0|NNS|fried|Other|VBD|egg|O|0|NN
+Ed|PERSON|0|NNP|is|IS-A|VBZ|native american|NATIONALITY|0|NN
+I|O|0|PRP|have|possession|VBP|bank account|O|0|NN
+bus driver|TITLE|0|NN|replaces|Other|VBZ|fuse|O|0|NN
+Life|O|1|NNP|has|containment|VBZ|has pleasure|O|0|NN
+Trivium|O|0|NNP|is|IS-A|VBZ|band|O|0|NN
+Tom|PERSON|0|NNP|took|Other|VBD|medicine|O|0|NN
+Twitch|O|0|VB|is|IS-A|VBZ|streaming website|O|0|NN
+Youtube|O|0|NNP|has|containment|VBZ|subscription feature|O|0|NN
+Mr. Hanson|PERSON|0|NNP|catches|Other|VBZ|frogs|O|0|NNS

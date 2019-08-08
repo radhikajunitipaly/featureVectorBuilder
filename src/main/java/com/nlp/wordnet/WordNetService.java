@@ -19,24 +19,24 @@ public class WordNetService {
 		return service;
 	}
 	
-	public int isScalar(String input) {
+	public boolean isScalar(String input) {
 		try {
 			@SuppressWarnings("unchecked")
-			List<String> list=new Wordnet().getWordList(input);
-			return checkInMetrics(list)?1:0;
+			List<String> list=new Wordnet().getWordList(input,"");
+			return checkInMetrics(list);
 		} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
 		}
 		
-		return 0;
+		return false;
 	}
 	
 	private boolean checkInMetrics(List<String> list) {
-		System.out.println(buildMetricsString());
+		//System.out.println(buildMetricsString());
 		String metricsString = buildMetricsString();
 		for(String each:list) {
 			if(metricsString.contains(each.trim().toLowerCase())) {
-				System.out.println("Matcing word "+each);
+				//System.out.println("Matcing word "+each);
 				return true;
 			}
 				
@@ -64,6 +64,6 @@ public class WordNetService {
 	}
 	
 	public static void main(String[] args) {
-		System.err.println(WordNetService.getInstance().isScalar("speed"));
+		System.err.println(WordNetService.getInstance().isScalar("size"));
 	}
 }

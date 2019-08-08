@@ -33,7 +33,7 @@ public class Feature_merged {
 	static String line = null;
 	static FileHelper fileHelper = new FileHelper();
 	static Date date = new Date();
-	static String content = "SUBJECT|SUB_NER|SCALAR_TYPE|TAG|VERB||VCAT|TAG|OBJECT|OBJ_NER|SCALAR_TYPE|TAG|LABEL \n";
+	static String content = "SUBJECT|SUB_NER|SCALAR_TYPE|TAG|VERB|VCAT|TAG|OBJECT|OBJ_NER|SCALAR_TYPE|TAG|LABEL \n";
 	static String contentForAutoWeka = "S-NER, S-SCALAR, S-TAG, V-CAT, V-TAG, O-NER, O-SCALAR, O-TAG, LABEL\n";
 	static Map<String, String> vcat = new HashMap<String, String>();
 
@@ -87,7 +87,7 @@ public class Feature_merged {
 						pipeline.annotate(annotation);
 
 						// Loop over sentences in the document
-						
+
 						for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
 							System.out.println(
 									"\n############################## PROCESSING NEXT SENTENCE #########################\n");
@@ -111,7 +111,7 @@ public class Feature_merged {
 
 							// Find the largest of all the triples
 							RelationTriple triple = getLongestTriple(triples);
-							if(triple==null) {
+							if (triple == null) {
 								continue;
 							}
 							// Print the triples
@@ -124,7 +124,7 @@ public class Feature_merged {
 							String subjectPos = null;
 							String objectPos = null;
 							String relationPos = null;
-							
+
 							String subjectNer = null;
 							String objectNer = null;
 
@@ -141,15 +141,20 @@ public class Feature_merged {
 									relationPos = ccl.getPos();
 								}
 							}
-						
-							content = content + triple.subjectGloss() + "|" + subjectNer + "|"+
-									"" + "|" + 
-									subjectPos + "|" + triple.relationGloss() + "|"+ getvcat(triple.relationGloss()) + "|" + relationPos + "|" + triple.objectGloss()
-								+ "|" +  objectNer + "|"+ "" + "|" + objectPos + "\n";
-							
-							contentForAutoWeka = contentForAutoWeka + "'"+subjectNer + "','"+ "0" + "','" + 
-									subjectPos + "','" + getvcat(triple.relationGloss()) + "','" + relationPos
-								+ "','" +  objectNer + "','"+ "0" + "','" + objectPos + "',\n";
+
+							content = content + triple.subjectGloss() + "|" + subjectNer + "|"
+							+ ((WordNetService.getInstance().isScalar(triple.subjectGloss()))?1:0) +"|"
+									+ subjectPos + "|" +
+									triple.relationGloss() + "|" + getvcat(triple.relationGloss()) + 
+									"|" + relationPos
+									+ "|" + triple.objectGloss() + "|" + objectNer 
+									+ "|" + ((WordNetService.getInstance().isScalar(triple.objectGloss()))?1:0) + "|" + objectPos +  "\n";
+
+							contentForAutoWeka = contentForAutoWeka + "'" + subjectNer + "','" + 
+									((WordNetService.getInstance().isScalar(triple.subjectGloss()))?1:0) + "','"
+									+ subjectPos + "','" + getvcat(triple.relationGloss()) + "','" + relationPos + "','"
+									+ objectNer + "','" + ((WordNetService.getInstance().isScalar(triple.objectGloss()))?1:0) +
+									"','" + objectPos + "',\n";
 						}
 					}
 					writeToFeatureVector(content, "featureVector");
@@ -163,10 +168,7 @@ public class Feature_merged {
 				}
 			}
 		}
-
 	}
-	
-	
 
 	private static RelationTriple getLongestTriple(Collection<RelationTriple> triples) {
 		int count = 0;
@@ -199,7 +201,7 @@ public class Feature_merged {
 
 		fileHelper.saveToFile(content, "result", outputFilename, "UTF-8");
 	}
-	
+
 	private static void writeToFeatureVectorForAutoWeka(String content, String filename) {
 		DateTime dt = new DateTime(date);
 		DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy-MM-dd-HH-mm");
@@ -249,8 +251,8 @@ public class Feature_merged {
 		vcat.put("be", "IS-A");
 		vcat.put("been", "IS-A");
 	}
-	
+
 	private static String getvcat(String verb) {
-		return (vcat.get(verb)==null)? "Other" : vcat.get(verb);
+		return (vcat.get(verb) == null) ? "Other" : vcat.get(verb);
 	}
 }
