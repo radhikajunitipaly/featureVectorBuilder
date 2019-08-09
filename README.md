@@ -3,4 +3,4 @@ featureVectorBuilder is a project to generate Feature Vector of a given input te
 
 To test the project, compile and run the file named feature_merged.java
 
-Existing software that I have used to build the project are: Stanford CoreNLP, OpenIE, WordNet
+Open source software that I have used to build the project are: Stanford CoreNLP, OpenIE, WordNet
